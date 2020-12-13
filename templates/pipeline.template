@@ -65,7 +65,7 @@ Resources:
       Environment:
         Type: LINUX_CONTAINER
         ComputeType: BUILD_GENERAL1_SMALL
-        Image: 'aws/codebuild/python:3.6.5'
+        Image: 'aws/codebuild/standard:4.0'
         EnvironmentVariables:
           - Name: PROJECTNAME
             Value: !Sub '${GitHubRepoName}'
